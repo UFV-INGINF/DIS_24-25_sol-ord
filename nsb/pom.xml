@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>es.ufv.dis.back.final2025</groupId>
 	<artifactId>nsb</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<name>nsb</name>
 	<description>Backend examen final ordinaria</description>
 	<url/>
