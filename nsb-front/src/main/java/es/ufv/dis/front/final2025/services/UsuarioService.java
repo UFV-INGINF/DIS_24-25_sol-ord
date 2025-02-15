@@ -18,8 +18,8 @@ import org.springframework.stereotype.Service;
 public class UsuarioService implements Serializable {
 
 
-//    private static final String URL = "http://back:8080/api/v1/usuarios%s";
-    private static final String URL = "http://localhost:8080/api/v1/usuarios%s";
+    private static final String URL = "http://back:8080/api/v1/usuarios%s";
+//    private static final String URL = "http://localhost:8080/api/v1/usuarios%s";
 
     public ArrayList<Usuario> getUsers() {
         Gson gson = new Gson();
