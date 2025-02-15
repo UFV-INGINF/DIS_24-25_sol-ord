@@ -7,7 +7,7 @@
     <groupId>es.ufv.dis.front.final2025</groupId>
     <artifactId>nsb</artifactId>
     <name>Project base for Spring Boot and Vaadin Flow</name>
-    <version>1.0.1</version>
+    <version>1.0.2-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <properties>
