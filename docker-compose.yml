@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  front:
+    container_name: front
+    build:
+      context: ./nsb-front
+    ports:
+      - "8081:8081"
+    networks:
+      - app-network
+    depends_on:
+      - back
+
+  back:
+    container_name: back
+    build:
+      context: ./nsb
+    ports:
+      - "8080:8080"
+    networks:
+      - app-network
+    volumes:
+      - ${PDF_FILES_DIR}:/app/pdf-files
+
+networks:
+  app-network:
+    driver: bridge
