@@ -57,3 +57,18 @@ Para ejecutar el proyecto completo, es necesario ejecutar el comando `docker com
 
  ⚠️ **¡Importante!** Para ejecutar el proyecto completo correctamente, es necesario definir el path hasta la ruta donde se encuentra el proyecto clonado, a la carpeta `pdf-files`
 
+## Comandos docker
+
+Los comandos necesarios para generar un contenedor standalone de cada uno de los proyectos serían los siguientes:
+
+- **FRONT**: docker run --name front --rm -p 8080:8080 frontend:latest
+- **BACK**: docker run --name back --rm -p 8081:8081 backend:latest
+
+Esto es, teniendo en cuenta que las imágenes del fron y el back son las indicadas en la instrucción y en el enunciado del ejercicio.
+
+Si quisiéramos que ambos contenedores se puedan comunicar, sería necesario conectar ambos a una red docker, de tipo bridge. Suponiendo que disponemos ya de la red `examen`, los comandos quedarían de la siguiente forma:
+
+- **FRONT**: docker run --name front --rm -p 8080:8080 --network examen frontend:latest
+- **BACK**: docker run --name back --rm -p 8081:8081 --network examen backend:latest
+
+La primera solución es la solicitada en el enunciado del examen.
