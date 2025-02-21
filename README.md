@@ -10,6 +10,7 @@ Solución del examen práctico de la convocatoria ordinaria DIS 24-25
 1. [Git](#git)
 1. [Docker](#docker)
    1. [Docker compose](#docker-compose)
+   1. [Comandos docker](#comandos-docker)
 
 # Organización
 Este proyecto consta de tres carpetas. Una para el frontend y otra para el backend, así como una para almacenar los ficheros pdf.
